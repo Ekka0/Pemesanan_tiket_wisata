@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WisataKu - Pesan Tiket Wisata</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="top"><div class="in">
+<a class="logo" href="#"><span class="tk"></span>Wisata<b>Ku</b></a>
+<div class="links"><a class="act" href="#">Beranda</a><a href="#destinasi">Destinasi</a><a href="#cara">Cara Pesan</a><a class="adm" href="admin.html">Masuk Admin</a></div>
+</div></nav>
+
+<header class="hero">
+<svg class="scene" viewBox="0 0 1440 640" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+<defs>
+<radialGradient id="g"><stop offset="0" stop-color="#fff3b0"/><stop offset="1" stop-color="#ffb347" stop-opacity="0"/></radialGradient>
+<linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1fa7b8"/><stop offset="1" stop-color="#0b4f7a"/></linearGradient>
+</defs>
+<circle cx="720" cy="400" r="200" fill="url(#g)"/>
+<circle cx="720" cy="400" r="80" fill="#ffe08a"/>
+<path d="M0 470 L180 360 L330 440 L520 320 L720 450 L930 350 L1130 450 L1300 380 L1440 440 V640 H0Z" fill="#46427f"/>
+<path d="M0 520 L220 430 L420 510 L640 420 L860 520 L1080 440 L1440 530 V640 H0Z" fill="#2c2b66"/>
+<rect y="540" width="1440" height="100" fill="url(#sea)"/>
+<path d="M0 565 Q90 550 180 565 T360 565 T540 565 T720 565 T900 565 T1080 565 T1260 565 T1440 565" stroke="#ffffff66" stroke-width="3" fill="none"/>
+</svg>
+<div class="wrapm hc">
+<span class="tag">Tiket Wisata</span>
+<h1>Liburan Seru, <em>Tiket Beres.</em></h1>
+<p>Pilih destinasi, tentukan tanggal kunjungan, dan amankan tiketmu secara online dengan kuota yang selalu diperbarui.</p>
+<div class="chips"><span>🎟️ Tanpa antre</span><span>📊 Kuota real-time</span><span>💳 Harga transparan</span></div>
+</div>
+</header>
+
+<div class="wrapm bookwrap" id="form-pesan">
+<div class="bookbar">
+<h2>Pesan Tiketmu</h2>
+<div class="bgrid">
+<div class="f2"><label for="nama">Nama pemesan</label><div class="fld"><span class="ic">👤</span><input id="nama" placeholder=""></div></div>
+<div class="f2"><label for="hp">No. HP</label><div class="fld"><span class="ic">📱</span><input id="hp" placeholder=""></div></div>
+<div class="f2"><label for="dest">Destinasi wisata</label><div class="fld"><span class="ic">📍</span><select id="dest"></select></div></div>
+<div class="f2"><label for="tgl">Tanggal kunjungan</label><div class="fld"><span class="ic">📅</span><input id="tgl" type="date"></div></div>
+<div class="f2"><label for="jml">Jumlah tiket (1–10)</label><div class="fld"><span class="ic">🎫</span><input id="jml" type="text" inputmode="numeric" value="1"></div></div>
+<div class="f2 bt"><label>&nbsp;</label><button id="pesan">Pesan Tiket</button></div>
+</div>
+<div class="mut" id="info"></div>
+<div class="sumbar">
+<div><span>Destinasi</span><b id="sd">-</b></div>
+<div><span>Tanggal</span><b id="st">-</b></div>
+<div><span>Jumlah</span><b id="sj">-</b></div>
+<div><span>Harga per tiket</span><b id="sh">-</b></div>
+<div class="tot"><span>Total</span><b id="sT">-</b></div>
+</div>
+<div id="m1" class="msg"></div>
+</div>
+</div>
+
+<main class="wrapm">
+<h2 class="ttl" id="destinasi">Destinasi Populer</h2>
+<div class="cards" id="cards"></div>
+<h2 class="ttl" id="cara">Cara Memesan</h2>
+<div class="steps">
+<div><i>1</i><b>Pilih destinasi</b><p>Tentukan tempat wisata dan tanggal kunjunganmu.</p></div>
+<div><i>2</i><b>Isi data</b><p>Masukkan nama, nomor HP, dan jumlah tiket.</p></div>
+<div><i>3</i><b>Dapatkan ID</b><p>Tiket tercatat dan nomor transaksimu langsung muncul.</p></div>
+</div>
+</main>
+
+<footer class="ft"><div class="wrapm cols">
+<div><b>WisataKu</b><br>Sistem Penjualan Tiket Wisata<br>UTS Testing dan Implementasi Sistem · Studi Kasus 13</div>
+<div><b>Menu</b><br><a href="#destinasi">Destinasi</a><br><a href="#cara">Cara Pesan</a><br><a href="admin.html">Halaman Admin</a></div>
+</div></footer>
+<script src="data.js"></script>
+<script src="pembeli.js"></script>
+</body>
+</html>

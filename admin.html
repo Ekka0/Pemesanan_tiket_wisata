@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin - WisataKu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="top dark"><div class="in">
+<a class="logo" href="#"><span class="tk"></span>Wisata<b>Ku</b>&nbsp;Admin</a>
+<div class="links"><a class="adm" href="index.html">← Lihat Situs</a></div>
+</div></nav>
+<main class="wrapm adm-main">
+<div class="admh"><h1>Dashboard Admin</h1><p>Kelola kuota harian dan pantau seluruh transaksi.</p></div>
+<div id="rekap" class="stats"></div>
+<section>
+<h2 class="sh">Pengelolaan Kuota Harian</h2>
+<div class="wrap"><table><thead><tr><th>Destinasi</th><th>Harga</th><th>Kuota/hari</th></tr></thead><tbody id="kuota"></tbody></table></div>
+<div class="g2">
+<div><label for="kd">Ubah kuota destinasi</label><select id="kd"></select></div>
+<div><label for="kv">Kuota baru (1–1000)</label><input id="kv" type="text" inputmode="numeric" placeholder="Contoh: 80"></div>
+</div>
+<button id="simpanKuota">Simpan Kuota</button>
+<div id="m2" class="msg"></div>
+</section>
+<section>
+<h2 class="sh">Riwayat Transaksi</h2>
+<div class="wrap"><table><thead><tr><th>ID</th><th>Nama</th><th>HP</th><th>Destinasi</th><th>Tanggal</th><th>Jml</th><th>Total</th><th>Status</th><th>Aksi</th></tr></thead><tbody id="trx"></tbody></table></div>
+<div id="m3" class="msg"></div>
+</section>
+</main>
+<footer class="ft"><div class="wrapm">WisataKu Admin · UTS Testing dan Implementasi Sistem · Studi Kasus 13</div></footer>
+<script src="data.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
